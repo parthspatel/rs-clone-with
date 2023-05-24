@@ -1,0 +1,22 @@
+[package]
+name = "rs-clone-with"
+version = "0.1.0"
+edition = "2021"
+authors = ["Parth Patel <parthspatel.nj@gmail.com>"]
+description = "A procedural macro to clone a struct with some fields changed."
+license = "MIT"
+repository = ""
+readme = "README.md"
+
+[lib]
+name = "clone_with"
+path = "src/lib.rs"
+proc-macro = true
+
+[dependencies]
+syn = "2.0"
+quote = "1.0"
+proc-macro2 = "1.0"
+
+[dev-dependencies]
+lazy_static = "1.4.0"
