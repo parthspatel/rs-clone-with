@@ -34,9 +34,11 @@ mod sample_usage {
         assert_eq!(updated.name, "John Smith".to_string());
         assert_eq!(updated.has_a_pet, false);
 
+        updated.print_greeting();
+
         println!("Original: {:?}", original);
         println!("Updated: {:?}", updated);
-        updated.print_greeting();
+
         // Original: MyStruct { id: 0, name: "", has_a_pet: false }
         // Updated: MyStruct { id: 42, name: "John Smith", has_a_pet: false }
     }

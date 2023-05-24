@@ -14,18 +14,19 @@ use syn::{parse_macro_input, Data, DeriveInput, Fields};
 ///
 /// # Example
 ///
+/// This will generate a `with_field` method:
+///
 /// ```rust
+/// use clone_with::CloneWith;
+///
 /// #[derive(Clone, CloneWith)]
 /// struct MyStruct {
 ///     my_field: u32,
 /// }
-/// ```
 ///
-/// This will generate a `with_field` method:
-///
-/// ```rust
-/// let original = MyStruct { field: 1 };
+/// let original = MyStruct { my_field: 1 };
 /// let modified = original.with_my_field(2);
+///
 /// assert_eq!(original.my_field, 1);
 /// assert_eq!(modified.my_field, 2);
 /// ```
