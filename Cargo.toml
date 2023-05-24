@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["Parth Patel <parthspatel.nj@gmail.com>"]
 description = "A rust procedural macro to clone a struct with some fields changed."
 license = "MIT"
-repository = ""
+repository = "https://github.com/parthspatel/rs-clone-with"
 readme = "README.md"
 
 [lib]
